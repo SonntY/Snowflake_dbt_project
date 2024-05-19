@@ -1,0 +1,13 @@
+default:
+ target: dev
+ outputs:
+   dev:
+     type: snowflake
+     account: "mfcvojm-ku46506"
+     user: "TOVA"
+     password: "Snowflake1!"
+     database: "DB1"
+     warehouse: "COMPUTE_WH"
+     schema: "TRANSFORMED_TABLES"
+     role: "ACCOUNTADMIN"
+     threads: 4
