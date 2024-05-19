@@ -1,0 +1,23 @@
+# models/sources.yml
+
+
+version: 2
+
+
+sources:
+ patients:
+   tables:
+     - name: PATIENTS
+       schema: TRANSFORMED_TABLES
+
+
+ visit_info:
+   tables:
+     - name: VISIT_INFO
+       schema: TRANSFORMED_TABLES
+
+
+ tests:
+   tables:
+     - name: TESTS
+       schema: TRANSFORMED_TABLES
