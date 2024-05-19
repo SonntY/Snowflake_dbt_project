@@ -1,13 +1,13 @@
 default:
- target: dev
- outputs:
-   dev:
-     type: snowflake
-     account: "mfcvojm-ku46506"
-     user: "TOVA"
-     password: "Snowflake1!"
-     database: "DB1"
-     warehouse: "COMPUTE_WH"
-     schema: "TRANSFORMED_TABLES"
-     role: "ACCOUNTADMIN"
-     threads: 4
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: "{{ env_var('SNOWFLAKE_ACCOUNT') }}"
+      user: "{{ env_var('SNOWFLAKE_USER') }}"
+      password: "{{ env_var('SNOWFLAKE_PASSWORD') }}"
+      database: "{{ env_var('SNOWFLAKE_DATABASE') }}"
+      warehouse: "{{ env_var('SNOWFLAKE_WAREHOUSE') }}"
+      schema: "{{ env_var('SNOWFLAKE_SCHEMA') }}"
+      role: "{{ env_var('SNOWFLAKE_ROLE') }}"
+      threads: 4
