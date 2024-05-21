@@ -165,3 +165,6 @@ target/
 dbt_packages/
 logs/
 # end dbt Cloud content
+
+# Ignore dbt credentials.env
+credentials.env
