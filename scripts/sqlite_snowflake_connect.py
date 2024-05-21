@@ -54,10 +54,6 @@ snowflake_conn = snowflake.connector.connect(
 
 snowflake_cursor = snowflake_conn.cursor()
 
-# Connect to SQLite
-sqlite_conn = sqlite3.connect('patients.db')
-sqlite_cursor = sqlite_conn.cursor()
-
 # Fetch data from the "patients" table in SQLite
 sqlite_cursor.execute('SELECT Name, Family, ID, birthdate, city, region FROM patients')
 rows = sqlite_cursor.fetchall()
